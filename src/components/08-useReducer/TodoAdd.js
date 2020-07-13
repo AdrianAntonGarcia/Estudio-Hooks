@@ -1,8 +1,8 @@
 import React from "react";
 import { useForm } from "../../hooks/useForm";
 
-export const TodoAdd = React.memo(({ handleAddTodo }) => {
-	console.log('Renderizado TodoAdd');
+export const TodoAdd = ({ handleAddTodo }) => {
+	// console.log('Renderizado TodoAdd');
 	const [{ description }, handleInputChange, reset] = useForm({
 		description: "",
 	});
@@ -48,4 +48,4 @@ export const TodoAdd = React.memo(({ handleAddTodo }) => {
 			</form>
 		</>
 	);
-});
+};

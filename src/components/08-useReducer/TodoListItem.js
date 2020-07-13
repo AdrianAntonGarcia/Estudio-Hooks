@@ -6,7 +6,7 @@ export const TodoListItem = React.memo(({
 	handleDelete,
 	handleToggle,
 }) => {
-	console.log('Renderizado TodoListItem');
+	// console.log('Renderizado TodoListItem');
 	return (
 		<>
 			{/*TodoListItem, todo, index, handleDelete, handleToggle*/}

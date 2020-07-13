@@ -8,7 +8,6 @@ export const useForm = (initialState = {}) => {
 	const handleInputChange = ({ target }) => {
 		setValues({
 			...values,
-			// Estamos sacando el nombre de la propiedad con el []
 			[target.name]: target.value,
 		});
 	};
